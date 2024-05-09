@@ -7,13 +7,18 @@ import reportWebVitals from './reportWebVitals';
 import Library from './chapter_03/Library';
 import Clock from './chapter_04/Clock';
 import CommentList from './chapter_05/CommentList';
+import NotificationList from './chapter_06/NotificationList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
   root.render(
-    <React.StrictMode>
-      <CommentList />
-    </React.StrictMode>
+    // React.StrictMode: 개발 모드일 때 잠재적인 버그를 찾을 수 있게 해주는 모드
+    // But, 리액트 18 버전에서 Strict Mode의 동작이 변경돼 책과 다르게 리액트 라이프사이클이 다르게 호출됨
+    // 개발 모드에서 StrictMode를 사용하게 되면, 컴포넌트를 unmount 시켰다가 다시 한번 remount 시키게 됨
+    // so, 일단 주석 처리
+    // <React.StrictMode>
+      <NotificationList />
+    // </React.StrictMode>
   );
 }, 1000);
 
