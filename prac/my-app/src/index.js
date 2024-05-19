@@ -10,6 +10,7 @@ import CommentList from './chapter_05/CommentList';
 import NotificationList from './chapter_06/NotificationList';
 import Accomodate from './chapter_07/Accommodate';
 import ConfirmButton from './chapter_08/ConfirmButton';
+import LandingPage from './chapter_09/LandingPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
@@ -19,7 +20,7 @@ setInterval(() => {
     // 개발 모드에서 StrictMode를 사용하게 되면, 컴포넌트를 unmount 시켰다가 다시 한번 remount 시키게 됨
     // so, 일단 주석 처리
     // <React.StrictMode>
-      <ConfirmButton />
+      <LandingPage />
     // </React.StrictMode>
   );
 }, 1000);
