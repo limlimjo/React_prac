@@ -14,6 +14,7 @@ import LandingPage from './chapter_09/LandingPage';
 import AttendanceBook from './chapter_10/AttendanceBook';
 import SignUp from './chapter_11/SignUp';
 import Calculator from './chapter_12/Calculator';
+import ProfileCard from './chapter_13/ProfileCard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
@@ -23,7 +24,7 @@ setInterval(() => {
     // 개발 모드에서 StrictMode를 사용하게 되면, 컴포넌트를 unmount 시켰다가 다시 한번 remount 시키게 됨
     // so, 일단 주석 처리
     // <React.StrictMode>
-      <Calculator />
+      <ProfileCard />
     // </React.StrictMode>
   );
 }, 1000);
